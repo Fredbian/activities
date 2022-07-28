@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+    <link rel="stylesheet" href="./mini5.css">
+</head>
+<body>
+<!-- The modal should contain a form asking users to fill in the following data:
+
+The name of the project
+
+The type of project (use a <select> drop-down)
+
+The hourly wage for the project
+
+The due date for the project (use jQuery UI's datepicker with a minimum date setting in place) -->
+<form id="input-form" class="input-form" >
+    <label for="Project name">Project name:</label>
+    <input id="project-name" class="project-name" type="text" name="Name of the project" placeholder="Your project name">
+    <br>
+    <label for="Project type">Project type:</label>
+    <select name="project-type" id="project-type">
+        <option value="Front-end">Front-end</option>
+        <option value="Back-end">Back-end</option>
+        <option value="Full-stack">Full-stack</option>
+    </select>
+    <br>
+    <label for="Hourly rate">Hourly Rate: ($)</label>
+    <input id="hourly-rate" class="hourly-rate" type="text" name="Hourly rate" placeholder="Hourly rate">
+    <br>
+    <label for="Due date">Due date:</label>
+    <input id="due-date" class="due-date" type="text" name="Due date" placeholder="Due date">
+    <br>
+    <button id="submit-btn" class="submit-btn">Submit</button>
+</form>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="./mini5.js"></script>
+</body>
+</html>

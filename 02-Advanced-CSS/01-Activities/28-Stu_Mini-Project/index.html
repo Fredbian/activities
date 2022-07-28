@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <header>
+        <h1>
+            CSS Snippet Cheatsheet
+        </h1>
+        <div class="subtitle">
+            Ever have trouble recalling the exact syntax for your favorite CSS code? Give it a permanent home and add it to
+      this page! Select any snippet below and it'll automatically select all of the code for you to copy.
+        </div>
+    </header>
+    <main class="main">
+        <section class="section section1">
+            <div class="card group1 item1">
+                <h4>Flexbox Row</h4>
+                <div class="subtitleinbox">Use these three properties to create a Flexbox row layout.</div>
+                <div class="contentinbox"><code>.row {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;</code>></div> 
+            </div>
+            <div class="card group1 item2">
+                <h4>Flexbox Column</h4>
+                <div class="subtitleinbox">Use this to create a Flexbox column layout.</div>
+                <div class="contentinbox"><code>.column {
+                    display: flex;
+                    flex-direction: column
+                  }</code></div>
+            </div>
+            <div class="card group1 item3">
+                <h4>CSS Grid Layout</h4>
+                <div class="subtitleinbox">Build a 12-column layout using CSS Grid</div>
+                <div class="contentinbox"><code>.grid {
+                    display: grid;
+                    width: 100%;
+                    grid-template-columns: repeat(12, 1fr);
+                  }</code></div>
+            </div>
+        </section>
+        <section class="section section2">
+            <div class="card group2 item4">
+                <h4>Linear Gradients</h4>
+                <div class="subtitleinbox">This will create a background linear gradient from top to bottom.</div>
+                <div class="contentinbox"><code>.linear-gradient-background {
+                    background-image: linear-gradient(
+                      rgba(232, 102, 236, 0.3) 0%,
+                      rgba(232, 102, 236, 0.6) 100%
+                    );
+                  }</code></div>
+            </div>
+            <div class="card group2 item5">
+                <h4>Box Transition Glow</h4>
+                <div class="subtitleinbox">Use transition and box shadows to glow on hover.</div>
+                <div class="contentinbox"><code>.code-card .card-header {
+                    border-radius: 8px;
+                    transition: all 0.5s ease-in-out;
+                  }
+                  
+                  .code-card:hover,
+                  .code-card:hover .card-header {
+                    box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1), 0 0 15px rgba(232, 102, 236, 1);
+                  }</code></div>
+            </div>
+            <div class="card group2 item6">
+                <h4>Overlay Card with Title</h4>
+                <div class="subtitleinbox">Use position properties and negative margins to raise elements higher than their natural starting point.</div>
+                <div class="contentinbox"><code>.card-header {
+                    position: relative;
+                    margin-top: -20px;
+                  }</code></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>
+            Made with 💗 and CSS
+        </p>
+    </footer>
+</body>
+
+</html>

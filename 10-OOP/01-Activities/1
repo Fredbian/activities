@@ -1,0 +1,9 @@
+const array = [1,2,3]
+const num = 1
+array.filter((item) => {
+    if (item = 1) {
+        return true
+    } else {
+        return false
+    }
+})

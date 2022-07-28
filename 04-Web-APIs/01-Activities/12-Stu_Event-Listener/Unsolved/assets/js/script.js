@@ -1,0 +1,21 @@
+var count = 0;
+var incrementEl = document.querySelector("#increment");
+var decrementEl = document.querySelector("#decrement");
+var countEl = document.querySelector("#count");
+
+function setCounterText() {
+  countEl.textContent = count;
+}
+
+// TODO: Add event listener to increment button
+
+incrementEl.addEventListener('click', function() {
+  countEl.innerHTML = parseInt(countEl.innerHTML) + 1
+})
+
+// TODO: Add event listener to decrement button 
+decrementEl.addEventListener('click', function() {
+  if ( parseInt(countEl.innerHTML) > 0 ) {
+    countEl.innerHTML = parseInt(countEl.innerHTML) - 1
+  }  
+})

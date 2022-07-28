@@ -1,0 +1,36 @@
+
+.input-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    width: 50%;
+    border: 2px solid gray;
+    border-radius: 5px;
+    background-color: aquamarine;
+    text-align: center;
+    line-height: 1;
+}
+
+input {
+   
+    text-align: center;
+    height: 30px;
+    width: 150px;
+}
+
+select {
+    text-align: center;
+    height: 30px;
+    width: 150px;
+}
+
+.submit-btn {
+    margin-bottom: 10px;
+    height: 30px;
+    width: 150px;
+}
+
+label {
+    font-weight: 700;
+}
