@@ -7,7 +7,6 @@ describe("DayCare", () => {
       const dayCare = new DayCare();
 
       // TODO: Add a comment describing the purpose of the following statement
-      // Assert, api can create an obj, Positive
       expect(dayCare).toEqual({ children: [], capacity: 3, ageLimit: 6 });
     });
   });
@@ -15,16 +14,13 @@ describe("DayCare", () => {
   describe("addChild", () => {
     it("should add a child to the 'children' array", () => {
       // TODO: Add a comment describing the purpose of the following declarations
-      // Act
       const child = new Child("Tammy", 1);
       const dayCare = new DayCare();
 
       // TODO: Add a comment describing the purpose of the following method
-      
       dayCare.addChild(child);
 
       // TODO: Add a comment describing the purpose of the following statements
-      // Assert, Postitive
       expect(dayCare.children.length).toEqual(1);
       expect(dayCare.children[0]).toBe(child);
     });
@@ -36,7 +32,6 @@ describe("DayCare", () => {
       dayCare.addChild(child);
 
       // TODO: Add a comment describing the purpose of the following statement
-      // Assert, Negative test
       expect(dayCare.children.length).toEqual(0);
     });
 
@@ -45,7 +40,6 @@ describe("DayCare", () => {
       const child = new Child("Alice", 4);
 
       // TODO: Add a comment describing the purpose of the following expression
-      // Act
       dayCare.children = [
         new Child("Tammy", 1),
         new Child("Mark", 2),
@@ -55,26 +49,22 @@ describe("DayCare", () => {
       dayCare.addChild(child);
 
       // TODO: Add a comment describing the purpose of the following statement
-      // negative test, 
       expect(dayCare.children.length).toEqual(3);
     });
 
     it("should throw an error if not provided a Child object as an argument", () => {
       // TODO: Add a comment describing the purpose of the following declaration
-      // Arrange, set error message
       const err = new Error(
         "Expected parameter 'child' to be an instance of Child"
       );
 
       // TODO: Add a comment describing the purpose of the following expression
-      // Act
       const cb = () => {
         const dayCare = new DayCare();
         dayCare.addChild();
       };
 
       // TODO: Add a comment describing the purpose of the following statement
-      // expection test
       expect(cb).toThrowError(err);
     });
   });

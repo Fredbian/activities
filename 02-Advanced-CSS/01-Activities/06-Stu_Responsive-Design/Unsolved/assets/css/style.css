@@ -17,7 +17,6 @@ header {
 /* 
 What happens when we set the display property to flex? 
 TODO: Write your answer here 
-Set the nav element to flex container
 */
 nav {
   display: flex;
@@ -34,7 +33,6 @@ nav a {
 /* 
 What is the flex-wrap property? 
 TODO: Write your answer here 
-It allows flex items in side flex container to change line if there is not enough space.
 */
 main {
   display: flex;
@@ -58,7 +56,6 @@ footer {
 
 /* 
 What does the justify-content property do? 
-It sets the layout way that how flex items display.
 TODO: Write your answer here 
 */
 .products {
@@ -73,10 +70,7 @@ TODO: Write your answer here
 /* 
 What is the flex property a shorthand property for?
 What is it doing here? 
-TODO: Write your answer here
-flex-grow, flex-shrink, flex-basis
-How many times to others when this flex item grow or shrink, the minimer-width for a flex item 
-For this one, flex-item will grow or shrink as same as others, it min-width is 400px.
+TODO: Write your answer here 
 */
 .card {
   border-style: solid;
@@ -100,11 +94,8 @@ For this one, flex-item will grow or shrink as same as others, it min-width is 4
 
 /* 
 What does the flex-direction property define?
-What is it doing here?
+What is it doing here? 
 TODO: Write your answer here 
-It sets by which way the flex-item will layout, horizontal or vertical.
-For this one, it sets flex-item layout by vertical. 
-
 */
 @media screen and (max-width: 768px) {
   main,

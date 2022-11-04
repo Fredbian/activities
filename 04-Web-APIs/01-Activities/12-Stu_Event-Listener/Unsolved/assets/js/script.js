@@ -9,13 +9,4 @@ function setCounterText() {
 
 // TODO: Add event listener to increment button
 
-incrementEl.addEventListener('click', function() {
-  countEl.innerHTML = parseInt(countEl.innerHTML) + 1
-})
-
 // TODO: Add event listener to decrement button 
-decrementEl.addEventListener('click', function() {
-  if ( parseInt(countEl.innerHTML) > 0 ) {
-    countEl.innerHTML = parseInt(countEl.innerHTML) - 1
-  }  
-})

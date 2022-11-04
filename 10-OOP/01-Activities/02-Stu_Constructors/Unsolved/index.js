@@ -5,15 +5,3 @@
 // TODO: Create a new object using the 'Developer' constructor
 
 // TODO: Call the 'introduction()' method on the new object
-function Developer (name, tech) {
-    this.name = name
-    this.tech = tech
-    this.introduction = () =>{
-        console.log(`This developer's name is ${this.name}, and he/she likes ${this.tech}`)
-    }
-}
-
-const bob = new Developer('Bob', 'JavaScript')
-
-
-bob.introduction()

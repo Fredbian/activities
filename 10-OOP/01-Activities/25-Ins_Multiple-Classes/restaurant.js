@@ -7,7 +7,7 @@ class Restaurant {
     this.orders = [];
     this.revenue = 0;
   }
-  
+
   takeOrder(order) {
     this.revenue += order.item.price;
     this.orders.push(order);

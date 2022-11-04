@@ -2,7 +2,6 @@ var requestUrl = 'https://api.github.com/orgs/Netflix/repos';
 
 // JQuery AJAX
 // TODO: Comment on how AJAX returns an API call
-// it returns array
 $.ajax({
   url: requestUrl,
   method: 'GET',
@@ -13,7 +12,6 @@ $.ajax({
 
 // Browser Fetch Method
 // TODO: Comment on how Fetch returns an API call
-// It returns json Array
 fetch(requestUrl)
   .then(function (response) {
     return response.json();
@@ -25,7 +23,6 @@ fetch(requestUrl)
 
 // Browser XMLHttpRequest
 // TODO: Comment on how XMLHttpRequest returns an API call
-// it returns a string
 var xhr = new XMLHttpRequest();
 xhr.onreadystatechange = function () {
   if (xhr.readyState === XMLHttpRequest.DONE) {

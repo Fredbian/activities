@@ -24,8 +24,8 @@ describe("DayCare", () => {
     it("should not add a child over the 'ageLimit'", () => {
       const child = new Child("Tammy", 8);
       const dayCare = new DayCare();
-      const mock = jest.spyOn(console, "log");
-      mock.mockImplementation(() => {});
+      const mock = jest.spyOn();
+      mock.mockImplementation();
 
       dayCare.addChild(child);
 
@@ -39,8 +39,8 @@ describe("DayCare", () => {
     it("should not add a child if already at capacity", () => {
       const dayCare = new DayCare();
       const child = new Child("Alice", 4);
-      const mock = jest.spyOn(console, "log");
-      mock.mockImplementation(() => {});
+      const mock = jest.spyOn();
+      mock.mockImplementation();
       dayCare.children = [
         new Child("Tammy", 1),
         new Child("Mark", 2),
@@ -52,7 +52,7 @@ describe("DayCare", () => {
       expect(dayCare.children.length).toEqual(3);
       expect(mock).toBeCalledWith("At capacity, unable to add more children");
 
-      mock.mockRestore(() => {});
+      mock.mockRestore();
     });
 
     it("should throw an error if not provided a Child object as an argument", () => {
@@ -73,9 +73,9 @@ describe("DayCare", () => {
       const child1 = new Child("Tammy", 1);
       const child2 = new Child("Mark", 2);
       const child3 = new Child("Alvin", 1);
-      const mock = jest.spyOn(console, "log");
+      const mock = jest.spyOn();
       dayCare.children = [child1, child2, child3];
-      mock.mockImplementation(() => {});
+      mock.mockImplementation();
       const removed = dayCare.pickupChild(child2.name);
 
       expect(removed).toBe(child2);
@@ -92,9 +92,9 @@ describe("DayCare", () => {
       const child1 = new Child("Tammy", 1);
       const child2 = new Child("Mark", 2);
       const child3 = new Child("Alvin", 1);
-      const mock = jest.spyOn(console, "log");
+      const mock = jest.spyOn();
       dayCare.children = [child1, child2, child3];
-      mock.mockImplementation(() => {});
+      mock.mockImplementation();
       const removed = dayCare.pickupChild("Fred");
 
       expect(typeof removed).toEqual("undefined");

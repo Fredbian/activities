@@ -22,12 +22,10 @@ var formSubmitHandler = function (event) {
 var buttonClickHandler = function (event) {
   // What is `event.target` referencing?
   // TODO: Write your answer here
-  // It indicate this event happened on which element
   var language = event.target.getAttribute('data-language');
 
   // Why is this `if` block in place?
   // TODO: Write your answer here
-  // 
   if (language) {
     getFeaturedRepos(language);
 
@@ -76,7 +74,6 @@ var displayRepos = function (repos, searchTerm) {
     repoContainerEl.textContent = 'No repositories found.';
     // What would happen if there was no `return;` here?
     // TODO: Write your answer here
-    // the loop will still run if there is no return
     return;
   }
 

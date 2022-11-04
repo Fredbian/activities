@@ -1,13 +1,11 @@
 // TODO: What does 'this' refer to?
 console.log(this);
-// window object
 
 // TODO: What does 'this' refer to?
 function helloThis() { 
    console.log("Inside this function, this is " + this); 
    }
-// this function
-   
+
 // TODO: What will this log? 
 var child = { 
    age: 10,
@@ -15,7 +13,6 @@ var child = {
        console.log(this.age + 10); 
    }
 };
-// 20
 
 // TODO: What will this log? 
 var investor = {  
@@ -27,7 +24,6 @@ var investor = {
     }
    }   
 };
-// 5750
 
 // TODO: After commenting, check your results!
 helloThis();

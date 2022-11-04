@@ -1,24 +1,6 @@
 // TODO: Import the parent class
-const Vehicle = require('./vehicle')
+
 // TODO: Create a `Boat` class that extends the `Vehicle` class
-class Boat extends Vehicle {
-  constructor(id, type, crew) {
-    super(id, 0, 'bwom')
-    this.type = type 
-    this.crew = crew
-  }
-
-  useHorn() {
-    return console.log(`${this.sound}`)
-  }
-
-  crewSoundOff() {
-    this.crew.forEach(passenger => {
-      console.log(`${passenger} reporting for duty!`)      
-    });
-  }
-
-}
 
 const boatPassengers = [
   'Blackbeard',

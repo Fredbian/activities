@@ -11,10 +11,10 @@ const sortHelper = (type) =>
   termData.sort(sortData('term', 'relevance', `${type}`));
 
 // TODO: Add a comment describing the functionality of this route
-// set GET route to sort and get terms.json
+
 app.get('/api/terms/', (req, res) => {
   // TODO: Add a comment describing the req.query object
-  // set sort conditions by parameters
+
   const hasQuery = Object.keys(req.query).length > 0;
 
   if (hasQuery && req.query.sort === 'dsc') {
@@ -30,10 +30,10 @@ app.get('/api/terms/', (req, res) => {
 });
 
 // TODO: Add a comment describing what this route will return
-// GET route for searching term by specific 'term'
-app.get('/api/terms/:term', (req, res) => {
+
+app.get('/api/term/:term', (req, res) => {
   // TODO: Add a comment describing the content of req.params in this instance
-  // it is a specifice term name
+
   const requestedTerm = req.params.term.toLowerCase();
 
   for (let i = 0; i < termData.length; i++) {
@@ -47,7 +47,7 @@ app.get('/api/terms/:term', (req, res) => {
 });
 
 // TODO: Add a comment describing what this route will return
-// GET term by category
+
 app.get('/api/terms/:category', (req, res) => {
   const requestedCategory = req.params.category.toLowerCase();
   const result = [];
@@ -62,7 +62,7 @@ app.get('/api/terms/:category', (req, res) => {
 });
 
 // TODO: Add a comment describing what this route will return
-// GET categories
+
 app.get('/api/categories', (req, res) => {
   const categories = termData.map((term) => term.category);
 

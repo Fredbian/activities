@@ -23,4 +23,3 @@ container.addEventListener("click", function(event) {
   }
   
 });
-kiss

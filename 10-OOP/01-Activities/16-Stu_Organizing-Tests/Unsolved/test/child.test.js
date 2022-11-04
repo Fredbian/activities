@@ -2,25 +2,20 @@ const Child = require("../child");
 
 describe("Child", () => {
   // TODO: Add a comment describing the purpose of the following test suite
-  // api test unit test
   describe("Initialization", () => {
     it("should create an object with a name and age if provided valid arguments", () => {
       const child = new Child("Sarah", 3);
 
       // TODO: Add a comment describing the purpose of the following statements
-      // to test it can create an object with name and age
-      // Assert, positive test
       expect(child.name).toEqual("Sarah");
       expect(child.age).toEqual(3);
     });
 
     it("should throw an error if provided no arguments", () => {
       // TODO: Add a comment describing the purpose of the following expression
-      // Act, 
       const cb = () => new Child();
 
       // TODO: Add a comment describing the purpose of the following statement
-      // Assert, console error if no arguments, Exception test
       expect(cb).toThrow();
     });
 
@@ -28,11 +23,9 @@ describe("Child", () => {
       const cb = () => new Child("Sarah");
 
       // TODO: Add a comment describing the purpose of the following declaration
-      // Act, set error message
       const err = new Error("Expected parameter 'age' to be a non-negative number");
 
       // TODO: Add a comment describing the purpose of the following statement
-      // Assert, if no age provided, console error message, Exception test
       expect(cb).toThrowError(err);
     });
 

@@ -65,18 +65,14 @@ footer {
 
 /* TODO: Add properties to the cards to achieve the required look */
 .card {
-  transform: rotate(9deg);
-  border-radius: 40px;
   border-style: solid;
   border-width: 1px;
   padding: 10px;
   margin: 20px;
   flex: 0 0 300px;
-  box-shadow: 10px 10px 5px darkgray;
 }
 
 .card header {
-  border-radius: 40px 40px 0 0;
   padding: 20px;
 }
 

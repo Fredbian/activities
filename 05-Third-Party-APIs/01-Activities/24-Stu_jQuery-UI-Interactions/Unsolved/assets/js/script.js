@@ -66,14 +66,3 @@ $(function () {
 
 // Add interaction here
 //
-$( function() {
-  $( "ul" ).sortable({
-    revert: true
-  });
-  $( "li" ).draggable({
-    connectToSortable: "#sortable",
-    helper: "clone",
-    revert: "invalid"
-  });
-  $( "ul, li" ).disableSelection();
-} );
